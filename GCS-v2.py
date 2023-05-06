@@ -287,6 +287,7 @@ class GUI(QWidget):
         # split data
         allData = str(allData)
         
+        # data packet should follow this order - Acceleration (Z-axis), Vertical Velocity, Flight Computer On Time, Flight Computer Flight Time, Barometric Altitude, Temperature, System State, GPS SIV, GPS PDOP, GPS Fix, GPS Lat, GPS Long, GPS Alt
         self.Acc, self.Vel, self.OnTme, self.FltTme, self.baroAlt, self.baroTemp, self.state, self.gpsSats, self.gpsPDOP, self.gpsfix, self.gpsLat, self.gpsLon, self.gnssAlt = allData.split(', ')
 
     def updateDateTime(self):
