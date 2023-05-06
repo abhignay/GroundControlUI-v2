@@ -291,6 +291,7 @@ class GUI(QWidget):
         self.Acc, self.Vel, self.OnTme, self.FltTme, self.baroAlt, self.baroTemp, self.state, self.gpsSats, self.gpsPDOP, self.gpsfix, self.gpsLat, self.gpsLon, self.gnssAlt = allData.split(', ')
 
     def updateDateTime(self):
+        # using python's datetime library to get the date and time instead of having your GNSS module send it, more bytes for more important data.
         now = datetime.now()
 
         current_time = now.strftime("%H:%M:%S")
