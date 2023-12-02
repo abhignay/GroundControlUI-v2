@@ -16,6 +16,7 @@ The GUI class has all the functions that create the main GUI window, creates the
 ## A couple other things
 
 I've only tested this GUI on Windows 11, so let me know if you have any problems using it with other platforms (Mac and Linux)
+If you're using the UI on a laptop and see that all the text is overlapping try changing your display scale to 100% instead of 150%.
 
 Feel free to open up an issue if you have any questions. comments, or feedback.
 
