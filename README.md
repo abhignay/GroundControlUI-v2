@@ -23,9 +23,9 @@ The GUI class has all the functions that create the main GUI window, create the 
 
 The Command Vehicle section of the GCS can be set up to do whatever you want. Fire parachutes, change your flight computer's state, offset sensors, etc. For my rockets, I need my GCS to send commands to power on or off the cameras, fire pyros, and change the vehicle's state, so that is what it is set up to do. 
 
-Basically how it works is that when the button is clicked a hex value is printed to serial, the ground control hardware will read the received bytes, and after that, you can use an `if-else` statement to send different bytes to your vehicle based on the bytes received. 
+Basically how it works is that when the button is clicked a hex value is printed to serial, the ground control hardware will read the received bytes, and after that, you can use an `if-else` statement to operate diferent vehicle sub-systems based on the bytes received, i.e. the buttons pressed. 
 
-Here's an example of how I've done it:-
+Here's an example of how I have done it:-
 
 ```c++
 if (Serial.available()) {
@@ -45,7 +45,7 @@ if (Serial.available()) {
 
 I've only tested this GUI on Windows 11, so let me know if you have any problems using it with other platforms (Mac and Linux)
 
-If you're using the UI on a laptop and see that all the text is overlapping try changing your display scale to 100% instead of 150%.
+If you're using the UI on a laptop and see that all the text is overlapping try changing your display scale to 100% (Windows Specifically).
 
 Feel free to open up an issue if you have any questions, comments, or feedback.
 
